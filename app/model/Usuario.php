@@ -8,5 +8,5 @@ abstract class Usuario {
     private int $telefone;
     private string $email;
     private int $cep;
-    
+
 }

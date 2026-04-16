@@ -8,3 +8,5 @@ use app\core\Router;
 $router = new Router();
 
 $router->get('/', 'OngController@listarTodos');
+
+$router->run();
