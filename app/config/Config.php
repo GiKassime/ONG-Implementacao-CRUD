@@ -14,12 +14,12 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 //Configuração do Sistema
-define('APP_NAME', 'CaoNectados');
-define('URL_BASE', 'http://localhost:8080');
+define('APP_NAME', 'Ong');
+define('URL_BASE', 'http://localhost/ONG-Implementacao-CRUD/public');
 
 //Configurações do Banco de dados
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'db_caonectados');
+define('DB_NAME', 'db_ong');
 
 define('DB_USER', 'root');
-define('DB_PASS', 'bancodedados');
+define('DB_PASS', 'root');

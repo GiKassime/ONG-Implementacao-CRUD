@@ -32,6 +32,14 @@ class Router
         $uri  = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $method = strtolower($_SERVER['REQUEST_METHOD']);
 
+        $basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '')), '/');
+        if ($basePath !== '' && $basePath !== '/' && strpos($uri, $basePath) === 0) {
+            $uri = substr($uri, strlen($basePath));
+            if ($uri === '') {
+                $uri = '/';
+            }
+        }
+
         foreach ($this->routes as $route) {
         
             if ($route['route'] == $uri && $route['method'] == $method) {
