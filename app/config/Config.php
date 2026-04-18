@@ -22,4 +22,4 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'db_ong');
 
 define('DB_USER', 'root');
-define('DB_PASS', 'root');
+define('DB_PASS', 'coloque_aqui');
